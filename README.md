@@ -9,7 +9,7 @@
 [![Technical Debt][technical_debt_badge]][technical_debt_link]
 [![Lines of Code][lines_of_code_badge]][lines_of_code_link]
 
-Программа для загрузки модов на CurseForge и Modrinth. Все настройки в файле config.json.
+Программа для загрузки модов на CurseForge и Modrinth.
 
 <!----------------------------------------------------------------------------->
 
