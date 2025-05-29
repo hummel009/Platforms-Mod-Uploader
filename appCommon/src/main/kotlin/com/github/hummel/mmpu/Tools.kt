@@ -1,4 +1,4 @@
-package com.github.hummel.uploader
+package com.github.hummel.mmpu
 
 import java.io.File
 

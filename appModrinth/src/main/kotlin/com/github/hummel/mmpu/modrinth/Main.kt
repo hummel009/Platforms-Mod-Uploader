@@ -1,6 +1,6 @@
-package com.github.hummel.uploader.modrinth
+package com.github.hummel.mmpu.modrinth
 
-import com.github.hummel.uploader.*
+import com.github.hummel.mmpu.*
 import com.google.gson.Gson
 import org.apache.hc.client5.http.classic.methods.HttpPost
 import org.apache.hc.client5.http.entity.mime.MultipartEntityBuilder

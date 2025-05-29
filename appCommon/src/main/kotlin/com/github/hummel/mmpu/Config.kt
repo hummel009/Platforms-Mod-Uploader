@@ -1,4 +1,4 @@
-package com.github.hummel.uploader
+package com.github.hummel.mmpu
 
 data class Config(
 	val token: String, val projectIds: List<String>, val projectNames: List<String>

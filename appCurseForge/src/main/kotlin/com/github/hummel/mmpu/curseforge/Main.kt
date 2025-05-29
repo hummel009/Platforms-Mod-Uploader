@@ -1,11 +1,10 @@
-package com.github.hummel.uploader.curseforge
+package com.github.hummel.mmpu.curseforge
 
-import com.github.hummel.uploader.Config
-import com.github.hummel.uploader.extractMcVersion
-import com.github.hummel.uploader.extractModLoader
-import com.github.hummel.uploader.sortAlphabetically
+import com.github.hummel.mmpu.Config
+import com.github.hummel.mmpu.extractMcVersion
+import com.github.hummel.mmpu.extractModLoader
+import com.github.hummel.mmpu.sortAlphabetically
 import com.google.gson.Gson
-import com.google.gson.reflect.TypeToken
 import org.apache.hc.client5.http.classic.methods.HttpGet
 import org.apache.hc.client5.http.classic.methods.HttpPost
 import org.apache.hc.client5.http.entity.mime.MultipartEntityBuilder
@@ -114,7 +113,7 @@ private fun getMappingsFromAPI(token: String): Map<Int, String> {
 private fun parseMappings(json: String): Map<Int, String> {
 	val gson = Gson()
 
-	val listType = object : TypeToken<List<GameVersion>>() {}.type
+	val listType = object : com.google.gson.reflect.TypeToken<List<GameVersion>>() {}.type
 	val gameVersions = gson.fromJson<List<GameVersion>>(json, listType)
 
 	val idToVer = mutableMapOf<Int, String>()
