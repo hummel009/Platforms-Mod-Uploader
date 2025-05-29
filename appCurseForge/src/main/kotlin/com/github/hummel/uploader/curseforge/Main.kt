@@ -69,7 +69,7 @@ private fun publishProject(
 	}
 }
 
-private val modLoaderMappings = mapOf(
+private val modLoaderMappings: Map<String, Int> = mapOf(
 	"NeoForge" to 10150,
 	"Forge" to 7498,
 	"Fabric" to 7499,
